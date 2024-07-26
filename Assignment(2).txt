@@ -1,0 +1,74 @@
+Data Structures with Java
+
+- Author: Ibrahimi Gul Amiz
+
+"Library Program"
+This project consists of four Java classes: Library, Resource, Book, and CD. The Library class is a generic class 
+that represents a library with a maximum number of resources. The Resource class is the parent class for Book 
+and CD classes and represents a resource with a title, publisher, year, electronic status, and number of copies. 
+The Book and CD classes are child classes of Resource and represent books and CDs, respectively, with additional attributes.
+
+1. Parent Class: Resource
+    The Resource class represents a resource with a title, publisher, year, electronic status, and number of copies. 
+    Borrowers can check out and return resources. 
+
+    The Resource class has the following instance variables:
+        title: the title of the resource
+        publisher: the publisher of the resource
+        year: the year of the resource
+        electronic: the electronic status of the resource
+        numCopies: the number of copies of the resource
+        borrowers: a list of borrowers who have checked out the resource
+
+    The Resource class has the following methods:
+        getTitle(): returns the title of the resource
+        getPublisher(): returns the publisher of the resource
+        getYear(): returns the year of the resource
+        isElectronic(): returns the electronic status of the resource
+        isAvailable(): returns whether the resource is available for checkout
+        getBorrowers(): returns the borrowers of the resource as an array
+        toString(): returns a formatted string representing the resource
+        checkOut(): checks out the resource to a borrower
+        checkIn(): checks in the resource from a borrower
+        isBorrowedBy(): checks if the resource is borrowed by a specific user
+
+2. Child Classes: Book and CD
+    The Book and CD classes are child classes of Resource and represent books and CDs, respectively, with additional attributes.
+
+    The Book class represents a book with a title, publisher, year, electronic status, number of copies, author, and number of pages. 
+   
+    The Book class has the following instance variables:
+        author: the author of the book
+        numPages: the number of pages in the book
+
+- The CD class represents a CD with a title, publisher, year, electronic status, number of copies, and runtime. 
+
+    The CD class has the following instance variables:
+        artist: the artist of the CD
+        length: the length of the CD 
+
+3. Library Class
+    The Library class is a generic class that represents a library with a maximum num of resources. 
+    
+    The Library class has the following instance variables:
+        maxResources: the maximum number of resources that can be stored in the library
+        resources: an ArrayList of resources    
+        
+    The Library class has the following methods:
+        getAllResources(): returns all resources in the library as an array
+        getUnavailable(): returns all the unavailable resources in library as an array
+        getAllUserHasCheckedOut(): returns all the resources checked out by a specific user in the library as an array
+        getAllBooks(): returns all the books in the library as an array
+        getAllCDs(): returns all the CDs in the library as array
+
+Limitations:
+    The Library class does not check if the library is full before adding a resource.
+    
+Acknowledgments:
+I used the following resources to write this project:
+    - W3Schools Java Tutorial for syntax and Java concepts.
+    - Google Search for confusion and help.
+
+Challenges:
+    I have edited these classes completely. I have removed all the unnecessary methods, structures, and notes. I found the feedback from our TAs
+    super effective and helpful. I would keep editing if this format is still unacceptable. Thank you for extending the resubmission time. 
